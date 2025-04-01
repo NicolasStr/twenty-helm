@@ -14,8 +14,9 @@ twenty:
   nodePort: 3000
   # If Ingress is disabled, configure this URL as the server URL
   # serverUrl: "toto.fr"
-  # If not set, must be set in ConfigMap or Secret.
-  # appSecret: "this-is-not-secret"
+  # Inline env to add, if not using ConfigMap or Secret.
+  env: {}
+    # APP_SECRET: "this-is-not-secret"
   envFromConfigMapName: ""
   envFromSecretName: ""
 
